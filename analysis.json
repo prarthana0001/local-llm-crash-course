@@ -1,0 +1,801 @@
+{
+  "/workspaces/local-llm-crash-course/PyCodar/setup.py": {
+    "structure": {
+      "file": "/workspaces/local-llm-crash-course/PyCodar/setup.py",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "setuptools",
+          "name": "setup",
+          "alias": null
+        },
+        {
+          "module": "setuptools",
+          "name": "find_packages",
+          "alias": null
+        }
+      ]
+    },
+    "metrics": {
+      "cyclomatic_complexity": {
+        "average": 0.0,
+        "max": 0.0,
+        "functions": []
+      },
+      "maintainability_index": 100.0,
+      "nesting_depth": 1
+    }
+  },
+  "/workspaces/local-llm-crash-course/PyCodar/pycodar/cli.py": {
+    "structure": {
+      "file": "/workspaces/local-llm-crash-course/PyCodar/pycodar/cli.py",
+      "functions": [
+        {
+          "name": "__init__",
+          "args": [
+            "self"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "test_method",
+          "args": [
+            "self"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "extract_code_structure",
+          "args": [
+            "file_path"
+          ],
+          "docstring": "Extract functions, classes, and methods from a Python file."
+        },
+        {
+          "name": "create_structure_tree",
+          "args": [
+            "metrics"
+          ],
+          "docstring": "Create a rich tree showing file structure with code elements."
+        },
+        {
+          "name": "parse_ignore_file",
+          "args": [
+            "file_path"
+          ],
+          "docstring": "Parse an ignore file and return list of patterns."
+        },
+        {
+          "name": "should_ignore",
+          "args": [
+            "path",
+            "ignore_patterns"
+          ],
+          "docstring": "Check if a path should be ignored based on patterns."
+        },
+        {
+          "name": "get_ignore_patterns",
+          "args": [
+            "base_path"
+          ],
+          "docstring": "Get combined ignore patterns from .gitignore and .codarignore."
+        },
+        {
+          "name": "format_size",
+          "args": [
+            "size_kb"
+          ],
+          "docstring": "Format size in KB to a human-readable format."
+        },
+        {
+          "name": "count_code_metrics",
+          "args": [
+            "file_path"
+          ],
+          "docstring": "Count code, comments, and empty lines in a Python file."
+        },
+        {
+          "name": "create_metrics_table",
+          "args": [
+            "metrics"
+          ],
+          "docstring": "Create a rich table for basic metrics."
+        },
+        {
+          "name": "create_code_connections_table",
+          "args": [
+            "code_connections"
+          ],
+          "docstring": "Create a table showing most called functions and methods."
+        },
+        {
+          "name": "create_dead_code_table",
+          "args": [
+            "code_connections"
+          ],
+          "docstring": "Create a table showing potentially dead code."
+        },
+        {
+          "name": "create_code_connections_tree",
+          "args": [
+            "code_connections"
+          ],
+          "docstring": "Create a tree showing code connections and imports."
+        },
+        {
+          "name": "create_file_table",
+          "args": [
+            "metrics"
+          ],
+          "docstring": "Create a rich table for file distribution."
+        },
+        {
+          "name": "print_stats",
+          "args": [
+            "metrics"
+          ],
+          "docstring": "Print formatted statistics from the analysis."
+        },
+        {
+          "name": "print_structure",
+          "args": [
+            "metrics"
+          ],
+          "docstring": "Print file structure tree."
+        },
+        {
+          "name": "print_files",
+          "args": [
+            "metrics"
+          ],
+          "docstring": "Print file distribution table."
+        },
+        {
+          "name": "print_calls",
+          "args": [
+            "metrics"
+          ],
+          "docstring": "Print code connections information."
+        },
+        {
+          "name": "print_dead_code",
+          "args": [
+            "metrics"
+          ],
+          "docstring": "Print potentially unused code."
+        },
+        {
+          "name": "print_all",
+          "args": [
+            "metrics"
+          ],
+          "docstring": "Print all information from all commands."
+        },
+        {
+          "name": "print_help",
+          "args": [],
+          "docstring": "Print help information about PyCodar commands."
+        },
+        {
+          "name": "process_directory",
+          "args": [
+            "args"
+          ],
+          "docstring": "Process a directory and return metrics."
+        },
+        {
+          "name": "main",
+          "args": [],
+          "docstring": null
+        }
+      ],
+      "classes": [
+        {
+          "name": "TestClass",
+          "docstring": null,
+          "methods": [
+            {
+              "name": "__init__",
+              "args": [
+                "self"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "test_method",
+              "args": [
+                "self"
+              ],
+              "docstring": null
+            }
+          ]
+        }
+      ],
+      "imports": [
+        {
+          "module": "argparse",
+          "alias": null
+        },
+        {
+          "module": "analyze",
+          "name": "analyze_directory",
+          "alias": null
+        },
+        {
+          "module": "sys",
+          "alias": null
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null
+        },
+        {
+          "module": "rich.console",
+          "name": "Console",
+          "alias": null
+        },
+        {
+          "module": "rich.table",
+          "name": "Table",
+          "alias": null
+        },
+        {
+          "module": "rich.tree",
+          "name": "Tree",
+          "alias": null
+        },
+        {
+          "module": "rich",
+          "name": "box",
+          "alias": null
+        },
+        {
+          "module": "ast",
+          "alias": null
+        },
+        {
+          "module": "fnmatch",
+          "alias": null
+        },
+        {
+          "module": "collections",
+          "name": "defaultdict",
+          "alias": null
+        }
+      ]
+    },
+    "metrics": {
+      "cyclomatic_complexity": {
+        "average": 4.42,
+        "max": 11,
+        "functions": [
+          {
+            "name": "extract_code_structure",
+            "complexity": 11,
+            "rank": "C"
+          },
+          {
+            "name": "create_structure_tree",
+            "complexity": 11,
+            "rank": "C"
+          },
+          {
+            "name": "parse_ignore_file",
+            "complexity": 5,
+            "rank": "A"
+          },
+          {
+            "name": "should_ignore",
+            "complexity": 7,
+            "rank": "B"
+          },
+          {
+            "name": "get_ignore_patterns",
+            "complexity": 1,
+            "rank": "A"
+          },
+          {
+            "name": "format_size",
+            "complexity": 3,
+            "rank": "A"
+          },
+          {
+            "name": "count_code_metrics",
+            "complexity": 7,
+            "rank": "B"
+          },
+          {
+            "name": "create_metrics_table",
+            "complexity": 1,
+            "rank": "A"
+          },
+          {
+            "name": "create_code_connections_table",
+            "complexity": 6,
+            "rank": "B"
+          },
+          {
+            "name": "create_dead_code_table",
+            "complexity": 8,
+            "rank": "B"
+          },
+          {
+            "name": "create_code_connections_tree",
+            "complexity": 8,
+            "rank": "B"
+          },
+          {
+            "name": "create_file_table",
+            "complexity": 4,
+            "rank": "A"
+          },
+          {
+            "name": "print_stats",
+            "complexity": 1,
+            "rank": "A"
+          },
+          {
+            "name": "print_structure",
+            "complexity": 1,
+            "rank": "A"
+          },
+          {
+            "name": "print_files",
+            "complexity": 1,
+            "rank": "A"
+          },
+          {
+            "name": "print_calls",
+            "complexity": 2,
+            "rank": "A"
+          },
+          {
+            "name": "print_dead_code",
+            "complexity": 4,
+            "rank": "A"
+          },
+          {
+            "name": "print_all",
+            "complexity": 1,
+            "rank": "A"
+          },
+          {
+            "name": "print_help",
+            "complexity": 1,
+            "rank": "A"
+          },
+          {
+            "name": "process_directory",
+            "complexity": 10,
+            "rank": "B"
+          },
+          {
+            "name": "main",
+            "complexity": 9,
+            "rank": "B"
+          },
+          {
+            "name": "TestClass",
+            "complexity": 2,
+            "rank": "A"
+          },
+          {
+            "name": "__init__",
+            "complexity": 1,
+            "rank": "A"
+          },
+          {
+            "name": "test_method",
+            "complexity": 1,
+            "rank": "A"
+          }
+        ]
+      },
+      "maintainability_index": 33.01,
+      "nesting_depth": 7
+    }
+  },
+  "/workspaces/local-llm-crash-course/PyCodar/pycodar/__init__.py": {
+    "structure": {
+      "file": "/workspaces/local-llm-crash-course/PyCodar/pycodar/__init__.py",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "cli",
+          "name": "main",
+          "alias": null
+        },
+        {
+          "module": "analyze",
+          "name": "analyze_directory",
+          "alias": null
+        }
+      ]
+    },
+    "metrics": {
+      "cyclomatic_complexity": {
+        "average": 0.0,
+        "max": 0.0,
+        "functions": []
+      },
+      "maintainability_index": 100.0,
+      "nesting_depth": 1
+    }
+  },
+  "/workspaces/local-llm-crash-course/PyCodar/pycodar/analyze.py": {
+    "structure": {
+      "file": "/workspaces/local-llm-crash-course/PyCodar/pycodar/analyze.py",
+      "functions": [
+        {
+          "name": "count_functions_and_classes",
+          "args": [
+            "file_path"
+          ],
+          "docstring": "Count the number of functions and classes in a Python file."
+        },
+        {
+          "name": "get_file_size_kb",
+          "args": [
+            "file_path"
+          ],
+          "docstring": "Get file size in KB."
+        },
+        {
+          "name": "count_lines",
+          "args": [
+            "file_path"
+          ],
+          "docstring": "Count number of lines in a file."
+        },
+        {
+          "name": "__init__",
+          "args": [
+            "self",
+            "file_path",
+            "module_name"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_FunctionDef",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_ClassDef",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_Import",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_ImportFrom",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_Call",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_Assign",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_Name",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_Attribute",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_Return",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "visit_Decorator",
+          "args": [
+            "self",
+            "node"
+          ],
+          "docstring": null
+        },
+        {
+          "name": "analyze_code_connections",
+          "args": [
+            "directory"
+          ],
+          "docstring": "Analyze code connections in a directory."
+        },
+        {
+          "name": "analyze_directory",
+          "args": [
+            "directory"
+          ],
+          "docstring": "Analyze a directory and return metrics."
+        },
+        {
+          "name": "generate_report",
+          "args": [],
+          "docstring": "Generate and print the project analysis report."
+        }
+      ],
+      "classes": [
+        {
+          "name": "CodeElementVisitor",
+          "docstring": "AST visitor that tracks definitions and calls.",
+          "methods": [
+            {
+              "name": "__init__",
+              "args": [
+                "self",
+                "file_path",
+                "module_name"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_FunctionDef",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_ClassDef",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_Import",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_ImportFrom",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_Call",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_Assign",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_Name",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_Attribute",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_Return",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            },
+            {
+              "name": "visit_Decorator",
+              "args": [
+                "self",
+                "node"
+              ],
+              "docstring": null
+            }
+          ]
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null
+        },
+        {
+          "module": "ast",
+          "alias": null
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null
+        },
+        {
+          "module": "typing",
+          "name": "Tuple",
+          "alias": null
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null
+        },
+        {
+          "module": "typing",
+          "name": "Set",
+          "alias": null
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null
+        },
+        {
+          "module": "collections",
+          "name": "defaultdict",
+          "alias": null
+        }
+      ]
+    },
+    "metrics": {
+      "cyclomatic_complexity": {
+        "average": 7.17,
+        "max": 50,
+        "functions": [
+          {
+            "name": "count_functions_and_classes",
+            "complexity": 6,
+            "rank": "B"
+          },
+          {
+            "name": "get_file_size_kb",
+            "complexity": 1,
+            "rank": "A"
+          },
+          {
+            "name": "count_lines",
+            "complexity": 3,
+            "rank": "A"
+          },
+          {
+            "name": "analyze_code_connections",
+            "complexity": 50,
+            "rank": "F"
+          },
+          {
+            "name": "analyze_directory",
+            "complexity": 9,
+            "rank": "B"
+          },
+          {
+            "name": "generate_report",
+            "complexity": 9,
+            "rank": "B"
+          },
+          {
+            "name": "CodeElementVisitor",
+            "complexity": 5,
+            "rank": "A"
+          },
+          {
+            "name": "__init__",
+            "complexity": 2,
+            "rank": "A"
+          },
+          {
+            "name": "visit_FunctionDef",
+            "complexity": 2,
+            "rank": "A"
+          },
+          {
+            "name": "visit_ClassDef",
+            "complexity": 5,
+            "rank": "A"
+          },
+          {
+            "name": "visit_Import",
+            "complexity": 4,
+            "rank": "A"
+          },
+          {
+            "name": "visit_ImportFrom",
+            "complexity": 6,
+            "rank": "B"
+          },
+          {
+            "name": "visit_Call",
+            "complexity": 10,
+            "rank": "B"
+          },
+          {
+            "name": "visit_Assign",
+            "complexity": 6,
+            "rank": "B"
+          },
+          {
+            "name": "visit_Name",
+            "complexity": 3,
+            "rank": "A"
+          },
+          {
+            "name": "visit_Attribute",
+            "complexity": 2,
+            "rank": "A"
+          },
+          {
+            "name": "visit_Return",
+            "complexity": 2,
+            "rank": "A"
+          },
+          {
+            "name": "visit_Decorator",
+            "complexity": 4,
+            "rank": "A"
+          }
+        ]
+      },
+      "maintainability_index": 33.25,
+      "nesting_depth": 7
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "/workspaces/local-llm-crash-course/PyCodar/setup.py": {},
+  "/workspaces/local-llm-crash-course/PyCodar/pycodar/cli.py": {
+    "__init__": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "test_method": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "extract_code_structure": {
+      "risk_score": 0.6,
+      "reasons": [
+        "high cyclomatic complexity",
+        "deeply nested logic"
+      ]
+    },
+    "create_structure_tree": {
+      "risk_score": 0.6,
+      "reasons": [
+        "high cyclomatic complexity",
+        "deeply nested logic"
+      ]
+    },
+    "parse_ignore_file": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "should_ignore": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "get_ignore_patterns": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "format_size": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "count_code_metrics": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "create_metrics_table": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "create_code_connections_table": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "create_dead_code_table": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "create_code_connections_tree": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "create_file_table": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "print_stats": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "print_structure": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "print_files": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "print_calls": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "print_dead_code": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "print_all": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "print_help": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "process_directory": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "main": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    }
+  },
+  "/workspaces/local-llm-crash-course/PyCodar/pycodar/__init__.py": {},
+  "/workspaces/local-llm-crash-course/PyCodar/pycodar/analyze.py": {
+    "count_functions_and_classes": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "get_file_size_kb": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "count_lines": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "__init__": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_FunctionDef": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_ClassDef": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_Import": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_ImportFrom": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_Call": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_Assign": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_Name": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_Attribute": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_Return": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "visit_Decorator": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "analyze_code_connections": {
+      "risk_score": 0.6,
+      "reasons": [
+        "high cyclomatic complexity",
+        "deeply nested logic"
+      ]
+    },
+    "analyze_directory": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    },
+    "generate_report": {
+      "risk_score": 0.2,
+      "reasons": [
+        "deeply nested logic"
+      ]
+    }
+  }
+}
